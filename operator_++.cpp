@@ -10,3 +10,24 @@ int main()
     k=i + j + i++ + j++ + ++i + ++j;
     cout<<i<<" "<<j<<" "<<k<<endl;
 } 
+
+
+//operatorList
+
+//arithmaticOperators
+//+,-,*,/,%,++,--
+
+//relationalOperators
+//==,!=,>,<,>=,<=
+
+//logicalOperator
+//&&,||,!
+
+//bitwiseOperator
+//&,|,^,~,<<,>>
+
+//assignmentOperator
+//=,+=,-=,*=,/=
+
+//miscOperator
+//sizeOf(),condition?X:Y,cast,comma(,)
