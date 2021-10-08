@@ -1,0 +1,1 @@
+//if next element is greterthan previus element then swap (n-1 interation)

@@ -1,0 +1,1 @@
+//find the min number from array and swap to the first element of array 
