@@ -6,7 +6,7 @@ class student
     public:
     int age;
     string name;
-
+    
   student()
   {
     cout<<"Default Constructor";
