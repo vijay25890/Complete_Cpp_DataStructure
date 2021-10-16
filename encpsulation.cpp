@@ -1,32 +1,32 @@
 //hidding sensitive data from user
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class A
 {
-    public:
+public:
     //access from anywhere
     int a;
     void funA()
     {
-        cout<<"Function A";
+        cout << "Function A";
     }
 
-    private:
+private:
     //private only
     int b;
     void funB()
     {
-        cout<<"Function B";
+        cout << "Function B";
     }
 
-    protected:
+protected:
     //not use outside the class
     int c;
     void funC()
     {
-        cout<<"Function C";
-    } 
+        cout << "Function C";
+    }
 };
 
 int main()
