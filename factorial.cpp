@@ -13,9 +13,9 @@ int main()
     }
     else
     {
-        for (int i = 1; i <= n; ++i)
+        for (int i = 1; i <= n; i++)
         {
-            fact *= i;
+            fact *= i; 
         }
         cout << "Factorial Of Number is:" << fact;
     }
