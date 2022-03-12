@@ -20,4 +20,4 @@ int main()
         cout<<"enter correct char";
         break;
     }
-}
+} 

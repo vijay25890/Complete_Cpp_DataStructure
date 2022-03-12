@@ -1,0 +1,9 @@
+1.array and string
+2.pointer and function
+3.searching and sorting
+4.stack and queue
+5.linked list
+6.oops
+7.other things in c++ like static const virtual
+8.programs simple
+9.competative coding   

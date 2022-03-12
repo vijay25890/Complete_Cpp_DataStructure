@@ -1,5 +1,3 @@
 
-
-
-//array must be sorted
-//time complexity O(lognbase2)
+// array must be sorted
+// time complexity O(lognbase2)
