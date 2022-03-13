@@ -1,1 +1,1 @@
-;
+i = 0, j = str.length() - 1; i < str.length() / 2; i++, j--
