@@ -4,7 +4,7 @@
 using namespace std;
 
 int bubbleSort()
-{ 
+{
     int n;
     cin >> n;
     int array[n];
