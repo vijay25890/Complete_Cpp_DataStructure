@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
       int n, t1 = 0, t2 = 1, nextTerm = 0;
-      
+
       cout << "Enter the number of terms";
       cin >> n;
 
@@ -23,11 +23,11 @@ int main()
                   cout << t2 << " ";
                   continue;
             }
-            nextTerm = t1 + t2; //netterm=1,1,3
-            t1 = t2;            //t1=0,1,1
-            t2 = nextTerm;      //t2=1,1,2
+            nextTerm = t1 + t2; // netterm=1,1,3
+            t1 = t2;            // t1=0,1,1
+            t2 = nextTerm;      // t2=1,1,2
 
-            cout << nextTerm << " ";  //1,2,3
+            cout << nextTerm << " "; // 1,2,3
       }
       return 0;
 }

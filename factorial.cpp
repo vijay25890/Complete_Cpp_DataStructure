@@ -13,11 +13,11 @@ int main()
     }
     else
     {
-        for (int i = 1; i <= n; i++)
+        for (int i = n; i >= 1; i--)
         {
-            fact *= i; 
+            fact *= i;
         }
         cout << "Factorial Of Number is:" << fact;
     }
     return 0;
-}  
+}
