@@ -8,6 +8,12 @@ struct Person
     double sallary;
 };
 
+void fuc(struct Person p4)
+{
+    p4.name = "vijay";
+    cout << "hii" << p4.name;
+}
+
 int main()
 {
     Person p1, p2[2];
@@ -22,6 +28,7 @@ int main()
     // cout << "Person name :" << p1.name << endl;
     // cout << "Person age :" << p1.age << endl;
     // cout << "Person sallary :" << p1.sallary << endl;
+    fuc(p1);
     for (int i = 0; i < 2; i++)
     {
         cin >> p2[i].name;

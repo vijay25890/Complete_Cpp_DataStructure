@@ -1,10 +1,10 @@
-#include <bits\stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main()
 {
     int year;
-    cout << "Enter year";
+    cout << "Enter an year :";
     cin >> year;
     if (year % 4 == 0)
     {
@@ -12,21 +12,21 @@ int main()
         {
             if (year % 400 == 0)
             {
-                cout << " leap year";
+                cout << "Leap year";
             }
             else
             {
-                cout << "It is not leap year";
+                cout << "Not a leap year";
             }
         }
         else
         {
-            cout << "It is leap year";
+            cout << "Leap year";
         }
     }
     else
     {
-        cout << "It is leap year";
+        cout << "Not a leap year";
     }
     return 0;
 }

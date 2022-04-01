@@ -1,40 +1,52 @@
-//class is blue print of 
-//object is instance of class
+// class is blue print of
+// object is instance of class
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class student
 {
-     public:
-     string name;
-     int age;
-     bool gender; 
+public:
+    string name;
+    int age;
+    bool gender;
 
-     void print(){
-         cout<<"Name =";
-         cout<<name<<endl;
-         cout<<"Age =";
-         cout<<age<<endl;
-         cout<<"Gender =";
-         cout<<gender<<endl;
-     }
-}; 
-int main()
-{   
-    student arr[3];
-    for(int i=0;i<3;i++)
+    void print()
     {
-        cout<<"Name :";
-        cin>>arr[i].name;
-        cout<<"Age :";
-        cin>>arr[i].age;
-        cout<<"Gender :";
-        cin>>arr[i].gender;
-    } 
+        cout << "Name =";
+        cout << name << endl;
+        cout << "Age =";
+        cout << age << endl;
+        cout << "Gender =";
+        cout << gender << endl;
+    }
+    int data();
+};
 
-    for(int i=0;i<3;i++){
+int student::data()
+{
+    int a = 10;
+    return a;
+}
+int main()
+{
+    student s;
+    cout << s.data();
+    student arr[3];
+    for (int i = 0; i < 3; i++)
+    {
+        cout << "Name :";
+        cin >> arr[i].name;
+        cout << "Age :";
+        cin >> arr[i].age;
+        cout << "Gender :";
+        cin >> arr[i].gender;
+    }
+
+    for (int i = 0; i < 3; i++)
+    {
         arr[i].print();
     }
+
     return 0;
-}                                           
+}
