@@ -3,15 +3,21 @@ using namespace std;
 
 int main()
 {
-    int num;
-    cout << "Enter the number :";
-    cin >> num;
-
-    for (int i = 1; i <= num; i++)
+    int n;
+    cout << "Enter a num :";
+    cin >> n;
+    for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= i; j++)
+        for (int j = 1; j <= n; j++)
         {
-            cout << "* ";
+            if (j <= n - i)
+            {
+                cout << " ";
+            }
+            else
+            {
+                cout << "* ";
+            }
         }
         cout << endl;
     }
