@@ -1,24 +1,28 @@
 #include <iostream>
 using namespace std;
 
-void binarySearch(int arr[], int n, int mid, int key)
+int binarySearch(int arr[], int n, int mid, int key)
 {
-    int l = arr[0];
-    int r = arr[n - 1];
+    int l = 0;
+    int r = n - 1;
     mid = n / 2;
 
-    if (mid == key)
+    while (l <= r)
     {
-        cout << mid << " ";
+        if (arr[mid] == key)
+        {
+            return mid;
+        }
+        else if (arr[mid] > key)
+        {
+            r = mid - 1;
+        }
+        else
+        {
+            l = mid + 1;
+        }
     }
-    else if (mid > key)
-    {
-        r = mid - 1;
-    }
-    else
-    {
-        l = mid + 1; 
-    }
+    return -1;
 }
 
 int main()
@@ -34,6 +38,6 @@ int main()
     {
         cin >> arr[i];
     }
-    binarySearch(arr, n, mid, key);
+    cout << binarySearch(arr, n, mid, key);
     return 0;
 }

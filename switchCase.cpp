@@ -1,23 +1,18 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 int main()
 {
-    char button;
-    cout<<"Enter a Char";
-    cin>>button;
-    switch(button)
+    int i = 2;
+    switch (i)
     {
-        case 'a':
-        cout<<"a is pressed";
-        break;
-    
-        case 'b':
-        cout<<"b is pressed";
-        break;
+    case 1:
+        cout << "Work";
 
-        default:
-        cout<<"enter correct char";
-        break;
+    case 2:
+        continue;
+
+    case 3:
+        cout << "Test";
     }
-} 
+}

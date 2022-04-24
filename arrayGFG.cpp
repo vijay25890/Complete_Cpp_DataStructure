@@ -1,5 +1,4 @@
 // print ulternate array values
-
 #include <bits/stdc++.h>
 using namespace std;
 
