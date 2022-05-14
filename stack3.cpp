@@ -37,7 +37,7 @@ public:
     }
 
     // displaying element to the stack
-    void display()
+    void displayElements()
     {
         if (top == -1)
         {
@@ -65,34 +65,37 @@ public:
     }
 
     // search element of the stack
-    void search(int value)
+    void searchElement(int value)
     {
         for (int i = 0; i <= top; i++)
         {
             if (arr[i] == value)
             {
-                cout << "Position of element is: " << i;
-                break;
+                cout << "Position of element is :" << i;
             }
-            else
+            else if (arr[top] != value)
             {
-                continue;
+                cout << "Element not present in stack";
             }
         }
-        cout << "-1";
     }
 
     // size of the stack
     void sizeOfStack()
     {
-        cout << top << endl;
+        cout << top + 1 << endl;
     }
 };
 
 int main()
 {
     Stack obj1;
-    obj1.display();
+    obj1.addElement(5);
+    obj1.addElement(5);
+    obj1.deleteElement();
+    obj1.displayElements();
+    obj1.searchElement(15);
     obj1.sizeOfStack();
+    obj1.topElement();
     return 0;
 }
