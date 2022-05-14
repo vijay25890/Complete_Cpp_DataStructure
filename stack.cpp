@@ -1,64 +1,66 @@
-// stack is list of items in which an item can be added to or removed from the list at one end LIFO manner
-
 #include <iostream>
 using namespace std;
-#define n 100
-class stack
-{
-    int *arr;
-    int top;
 
-public:
-    stack()
-    {
-        arr = new int[n];
-        top = -1;
-    }
+class Stack
+{
+    int n = 5;
+    int *arr = new int[n];
+    int top = -1;
+
     void push(int x)
     {
-        if (top == n - 1)
+        if (top >= n - 1)
         {
-            cout << "Stack overflow" << endl;
-            return;
+            cout << "Stack is full" << endl;
         }
-        top++;
-        arr[top] = x;
+        else
+        {
+            top++;
+            arr[top] = x;
+        }
     }
 
     void pop()
     {
         if (top == -1)
         {
-            cout << "No element to pop";
-            return;
+            cout << "Stack is empty" << endl;
         }
-        top--;
+        else
+        {
+            top--;
+        }
     }
 
-    int Top()
+    void display()
     {
         if (top == -1)
         {
-            cout << "No element in stack";
-            return -1;
+            cout << "Nothing in stack" << endl;
         }
-        return arr[top];
-    }
-
-    bool empty()
-    {
-        return top == -1;
+        else
+        {
+            for (int i = 0; i <= top; i++)
+            {
+                cout << arr[i];
+            }
+        }
     }
 };
 
 int main()
 {
-    stack st;
-    st.push(1);
-    st.push(2);
-    st.pop();
-    st.pop();
-    cout << st.empty();
-    cout << st.Top();
+    Stack S;
+    int ch, ele;
+    do
+    {
+        cout << "Enter your choice" << endl;
+        cin >> ch;
+        switch (ch)
+        {
+        case 1:
+            cout << "" push(ele);
+        }
+    } while (ch != 4);
     return 0;
 }
