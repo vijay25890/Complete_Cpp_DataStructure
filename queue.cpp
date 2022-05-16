@@ -1,5 +1,4 @@
 // FIFO Two End
-
 #include <iostream>
 using namespace std;
 #define n 100
@@ -8,25 +7,25 @@ class queue
 {
     int *arr;
     int front;
-    int back;
+    int rear;
 
 public:
     queue()
     {
         arr = new int[n];
         front = -1;
-        back = -1;
+        rear = -1;
     }
 
     void push(int x)
     {
-        if (back == n - 1)
+        if (rear == n - 1)
         {
             cout << "Queue overflow" << endl;
             return;
         }
-        back++;
-        arr[back] = x;
+        rear++;
+        arr[rear] = x;
 
         if (front == -1)
         {
@@ -36,7 +35,7 @@ public:
 
     void pop()
     {
-        if (front == -1 || front > back)
+        if (front == -1 || front > rear)
         {
             cout << "No elements in queue";
             return;
@@ -46,7 +45,7 @@ public:
 
     int peek()
     {
-        if (front == -1 || front > back)
+        if (front == -1 || front > rear)
         {
             cout << "No elements in queue";
             return -1;
@@ -56,7 +55,7 @@ public:
 
     bool epmty()
     {
-        if (front == -1 || front > back)
+        if (front == -1 || front > rear)
         {
             return true;
         }
